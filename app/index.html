@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en" ng-app="KIT">
+    <head>
+        <meta charset="utf-8">
+        <title>My AngularJS App</title>
+        <link rel="stylesheet" href="css/app.css"/>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    </head>
+    <body>
+        <a href="#/main">main</a>
+        <div ng-view></div>
+        <div>Angular seed app: v<span app-version></span></div>
+        <!-- In production use:
+        <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
+        -->
+        <script src="js/annyang.min.js"></script>
+        <script src="../bower_components/angular/angular.js"></script>
+        <script src="../bower_components/angular-route/angular-route.js"></script>
+        <script src="../bower_components/angular-cookies/angular-cookies.min.js"></script>
+        <script src="../bower_components/angular-translate/angular-translate.min.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/translations.js"></script>
+        <script src="js/services/languageServices.js"></script>
+        <script src="js/services/mainServices.js"></script>
+        <script src="js/controllers/mainCtrl.js"></script>
+        <script src="js/controllers/profileCtrl.js"></script>
+        <script src="js/filters/filters.js"></script>
+        <script src="js/directives/directives.js"></script>
+        <script src="js/jquery-1.11.0.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
+</html>
