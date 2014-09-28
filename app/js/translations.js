@@ -1,34 +1,24 @@
-angular.module('KIT').config(["$translateProvider",
+angular.module('VoiceApp').config(["$translateProvider",
     function($translateProvider) {
         $translateProvider.translations('en', {
-            Personal: 'Personal',
-            Social: 'Social',
             Profile: 'Profile',
-            HealthMonitoring: 'HealthMonitoring',
-            HomeMonitoring: 'HomeMonitoring',
-            Reminders: 'Reminders',
-            Alerts: 'Alerts',
-            Email: 'Email',
-            Contacts: 'Contacts',
-            Chat: 'Chat',
-            Video: 'Video',
-            Calendars: 'Calendars',
-            Games: 'Games'
+            Contact: 'Contact',
+			Language: 'Language',
+			Back: 'Back',
+			Say: 'Say',
+			GetBack: 'to get back',
+			ProfilePage : 'This is the profile page',
+			MainPage: 'This is the main page. Say profile to go to the profile page.'
         });
         $translateProvider.translations('pt', {
-            Personal: 'Pessoal',
-            Social: 'Social',
-        Profile: 'Perfil',
-            HealthMonitoring: 'Monitorização de Saúde',
-            HomeMonitoring: 'Monitorização de Ambiente',
-            Reminders: 'Lembretes',
-            Alerts: 'Alertas',
-            Email: 'Email',
-            Contacts: 'Contactos',
-            Chat: 'Conversa',
-            Video: 'Vídeo',
-            Calendars: 'Calendários',
-            Games: 'Jogos'
+			Profile: 'Perfil',
+            Contact: 'Contacto',			
+			Language: 'Linguagem',
+			Back: 'Para Trás',
+			Say: 'Diga',
+			GetBack: 'para voltar para trás',
+			ProfilePage : 'Esta é a página de perfil',
+			MainPage: 'Esta é a página principal. Diga "perfil" para ir para a página de perfil.'
         });
         $translateProvider.preferredLanguage('en');
     }

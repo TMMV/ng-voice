@@ -1,8 +1,7 @@
 'use strict';
 
 /* Services */
-angular.module('KIT.services').
-value('version', '0.1')
+angular.module('VoiceApp.services')
     .factory('Language', ["$http", "$q", "$cookies", "$translate",
         function($http, $q, $cookies, $translate) {
             return {

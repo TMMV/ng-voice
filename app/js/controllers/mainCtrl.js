@@ -2,9 +2,13 @@
 
 /* Controllers */
 
-angular.module('KIT.controllers')
+angular.module('VoiceApp.controllers')
     .controller('MainCtrl', ["$scope", "Language",
         function($scope, Language) {
-            Language.checkLanguage();
+			$scope.languagePicked = Language.checkLanguage();
+			$scope.saveLanguage = function(key) {
+                Language.saveLanguage(key);
+                $scope.languagePicked = key;
+            };
         }
     ])

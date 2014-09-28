@@ -1,21 +1,20 @@
 'use strict';
 
 // Declare app level module which depends on filters, and services
-angular.module('KIT', [
+angular.module('VoiceApp', [
     'ngRoute', 'ngCookies',
-    'KIT.filters',
-    'KIT.services',
-    'KIT.directives',
-    'KIT.controllers',
+    'VoiceApp.services',
+    'VoiceApp.directives',
+    'VoiceApp.controllers',
     'pascalprecht.translate'
 ]);
 
-angular.module('KIT.filters', []);
-angular.module('KIT.services', []);
-angular.module('KIT.directives', []);
-angular.module('KIT.controllers', []);
+angular.module('VoiceApp.filters', []);
+angular.module('VoiceApp.services', []);
+angular.module('VoiceApp.directives', []);
+angular.module('VoiceApp.controllers', []);
 
-angular.module('KIT').config(['$routeProvider',
+angular.module('VoiceApp').config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.when('/main', {
             templateUrl: 'partials/main.html',

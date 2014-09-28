@@ -1,24 +1,3 @@
-<p>This is the partial for view 1.</p>
-<div>
-	<div>
-		<h3>Linguagem: {{languagePicked}}</h3>
-		<form name="LanguagePicker">
-			<input type="radio" ng-model="languagePicked" value="pt" ng-change="saveLanguage('pt')">pt<br/>
-			<input type="radio" ng-model="languagePicked" value="en" ng-change="saveLanguage('en')">en<br/>
-		</form>
+<p translate="ProfilePage">This is the profile page</p>
+<p><span translate="Say">Say</span> <b><a href="#/" translate="Back" voice>Back</a></b> <span translate="GetBack">to get back</span></p>
 		
-	</div></br>
-	<div>
-		<div>
-			Mudança na db
-		</div>
-		<button class="btn" ng-click="sendLanguage('en')" >Enviar para db en</button>
-		<button class="btn" ng-click="sendLanguage('pt')" >Enviar para db pt</button>
-		Resposta {{sendResponse}}
-	</div></br>
-	<div>
-		<div>Ir Buscar à db</div>
-		<button class="btn" ng-click="getLanguage()" >Ir buscar à db</button>
-		Resposta {{getResponse}}
-	</div></br>
-</div>

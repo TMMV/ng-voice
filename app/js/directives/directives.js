@@ -3,7 +3,7 @@
 /* Directives */
 
 
-angular.module('KIT.directives').
+angular.module('VoiceApp.directives').
 directive('appVersion', ['version',
     function(version) {
         return function(scope, elm, attrs) {
