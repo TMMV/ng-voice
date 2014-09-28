@@ -4,13 +4,6 @@
 
 
 angular.module('VoiceApp.directives').
-directive('appVersion', ['version',
-    function(version) {
-        return function(scope, elm, attrs) {
-            elm.text(version);
-        };
-    }
-]).
 directive('voice', ['$document', '$location', '$translate',
     function($document, $location, $translate) {
 
